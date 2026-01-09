@@ -1,0 +1,64 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "Requests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "requestStatus", "order": "ASCENDING" },
+        { "fieldPath": "isEmergency", "order": "DESCENDING" },
+        { "fieldPath": "urgencyLevel", "order": "DESCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "Requests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "requestStatus", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "Requests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "bloodType", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "Appointments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "appointmentDate", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "Appointments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "appointmentDate", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "Appointments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "location", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "Appointments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "location", "order": "ASCENDING" },
+        { "fieldPath": "appointmentDate", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

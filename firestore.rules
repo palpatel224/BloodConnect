@@ -1,0 +1,30 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow authenticated users to read all collections
+    match /{document=**} {
+      allow read: if request.auth != null;
+    }
+    
+    // Allow users to write to their own user documents
+    match /Donor_Finder/{userId} {
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Allow users to write to their own appointment documents
+    match /Appointments/{appointmentId} {
+      allow write: if request.auth != null && request.resource.data.userId == request.auth.uid;
+    }
+    
+    // Requests can be created by authenticated users
+    match /Requests/{requestId} {
+      allow create: if request.auth != null;
+      // Only health workers or the creator can update/delete
+      allow update, delete: if request.auth != null && (
+        exists(/databases/$(database)/documents/Health_Worker/$(request.auth.uid)) ||
+        resource.data.userId == request.auth.uid
+      );
+    }
+  }
+}

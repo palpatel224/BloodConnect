@@ -1,0 +1,29 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "bloodconnect-e1ceb",
+          "appId": "1:921035896750:android:e3312a525ce2e57eb67a3f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "bloodconnect-e1ceb",
+          "configurations": {
+            "android": "1:921035896750:android:e3312a525ce2e57eb67a3f",
+            "ios": "1:921035896750:ios:9a445c3f1cf7ac5db67a3f",
+            "macos": "1:921035896750:ios:9a445c3f1cf7ac5db67a3f",
+            "web": "1:921035896750:web:8fe2af8b0e78584eb67a3f",
+            "windows": "1:921035896750:web:8502c5d1af5f0d24b67a3f"
+          }
+        }
+      }
+    }
+  }
+}
