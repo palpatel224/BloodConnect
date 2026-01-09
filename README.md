@@ -4,7 +4,12 @@ A Flutter app that connects blood donors and health workers. Donors can register
 
 ## Demo
 
-<video src="demo.mp4" controls width="640" style="max-width: 100%; height: auto;"></video>
+<video controls width="640" style="max-width: 100%; height: auto;">
+  <source src="https://github.com/palpatel224/BloodConnect/raw/main/demo.mp4" type="video/mp4" />
+  Your browser does not support inline video. [Watch the demo](https://github.com/palpatel224/BloodConnect/raw/main/demo.mp4).
+</video>
+
+> If the player does not appear on GitHub, use the direct link: https://github.com/palpatel224/BloodConnect/raw/main/demo.mp4
 
 ## Featuress
 
